@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.youth.banner.Banner
+            android:id="@+id/fg_detail_banner"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fg_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="古城模块"
+            android:textColor="#111"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fg_detail_banner" />
+
+        <TextView
+            android:textColor="#111"
+            android:id="@+id/fg_detail_message"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="       夜色中的西安，古老的城墙在黑夜里被红色的霓虹灯点亮，城墙下，这个古老的城市为我们讲诉着古老的传说，在夕阳的余光中，映射着长安千年的厚重，入夜更是绵延和秀丽，让人痴迷沉醉。西安城内，有古色古香的晨钟暮鼓、有蕴涵书法艺术精髓的碑林、更有举世闻名的文化遗产、有唐风秦韵孕育出的别样风情。如果在西安遇见你，我们一定要去灯火通明的回坊吃遍陕地美食、一定要背个小包，装着理想和喜欢的歌，去品味长安城细腻生活的街道德福巷、一定要去感受中华瑰宝碑林石碑、一定要去书院门沾一点书香墨宝。梦回长安、这里有诗、还有远方。西安，已经等了您三千年! "
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fg_detail_name" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

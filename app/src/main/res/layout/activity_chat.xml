@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        app:title="客服咨询"
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/ac_course_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ac_course_send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:met_hideUnderline="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ac_course_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/ac_course_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:textColor="#ffffff"
+        android:id="@+id/ac_course_send"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/bt_send"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="@+id/ac_course_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ac_course_input" />
+
+
+</android.support.constraint.ConstraintLayout>

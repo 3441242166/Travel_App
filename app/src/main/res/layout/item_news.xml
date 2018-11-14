@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ac_message_headlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ad_message_head"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+
+            <TextView
+                android:id="@+id/ad_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center|left"
+                android:text="2017-12-12 12:11:02"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/ad_message_head"
+                app:layout_constraintTop_toTopOf="@+id/ad_message_head" />
+
+            <TextView
+                android:id="@+id/ad_message_name"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:gravity="center|left"
+                android:text="官方账号"
+                app:layout_constraintBottom_toBottomOf="@+id/ad_message_head"
+                app:layout_constraintStart_toStartOf="@+id/ad_message_time"
+                app:layout_constraintTop_toBottomOf="@+id/ad_message_time" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/ad_message_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="夜游必读  送给大家的夜游攻略宝典"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ac_message_headlayout" />
+
+        <TextView
+            android:id="@+id/ad_message_contant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:maxLines="3"
+            android:text="西安作为十三朝古都，拥有丰富的人文古迹资源。有一些历经千年，才与我们相见。西安很多夜景基本上是在古迹的基础上，通过灯光的表现，营造出古城气象。也有些为仿古建筑，契合着这座古城的底蕴。"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/ad_message_good"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="24dp"
+            app:allow_random_color="true"
+            app:btn_fill_color="#a7d84c"
+            app:layout_constraintBottom_toBottomOf="@+id/ad_message_image_share"
+            app:layout_constraintEnd_toStartOf="@+id/ad_message_image_share"
+            app:layout_constraintTop_toTopOf="@+id/ad_message_image_share"
+            app:siShape="@raw/smile" />
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/ad_message_remark"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            app:allow_random_color="true"
+            app:btn_fill_color="#e69310"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0"
+            app:siShape="@raw/like" />
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/ad_message_image_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="24dp"
+            app:allow_random_color="true"
+            app:btn_fill_color="#e0e32a1d"
+            app:layout_constraintBottom_toBottomOf="@+id/ad_message_remark"
+            app:layout_constraintEnd_toStartOf="@+id/ad_message_remark"
+            app:layout_constraintTop_toTopOf="@+id/ad_message_remark"
+            app:siShape="@raw/heart" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ad_message_title"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>
