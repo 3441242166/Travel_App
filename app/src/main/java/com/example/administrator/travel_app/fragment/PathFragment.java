@@ -14,6 +14,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 import com.example.administrator.travel_app.R;
 import com.example.administrator.travel_app.activity.ArticleActivity;
+import com.example.administrator.travel_app.activity.HonorActivity;
 import com.example.administrator.travel_app.activity.PathMessageActivity;
 import com.example.administrator.travel_app.activity.WebActivity;
 import com.example.administrator.travel_app.adapter.GridAdapter;
@@ -121,7 +122,8 @@ public class PathFragment extends LazyLoadFragment {
         menu.setLayoutManager(managers);
         menu.setNestedScrollingEnabled(false);
         menuAdapter.setOnItemClickListener((adapter1, view, position) -> {
-            Intent intent = new Intent(getContext(),PathMessageActivity.class);
+            //Intent intent = new Intent(getContext(),PathMessageActivity.class);
+            Intent intent = new Intent(getContext(),HonorActivity.class);
             if(position<5) {
                 intent.putExtra("data", position - 1);
                 startActivity(intent);

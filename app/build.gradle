@@ -65,5 +65,6 @@ dependencies {
     implementation 'com.yalantis:phoenix:1.2.3'
     implementation 'com.github.CN-ZPH:weibo360panorama:v1.0.1'
     implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.github.baoyachi:StepView:1.9'
     implementation files('libs/BaiduLBS_Android.jar')
 }

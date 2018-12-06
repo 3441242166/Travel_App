@@ -18,5 +18,7 @@ public class PathMessageActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.ac_pathmessage_text);
         textView.setText(ar[getIntent().getIntExtra("data",1)]);
+
+
     }
 }
